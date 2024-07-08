@@ -4,7 +4,7 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 
 *Oh... yes, I may have written a little dramatic article. A little bit.*
 
-• Website & Demo: *https://coderyello.github.io/genius-start-page* | Version 1.0 (Latest.)
+• Website & Demo: *https://coderyello.github.io/Genius-Start-Page* | Version 1.0 (Latest.)
 
 ![image](https://raw.githubusercontent.com/CoderYello/Genius-Start-Page/main/screenshots/screenshot.png)
 
