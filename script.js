@@ -111,6 +111,21 @@ function executeCommand() {
     } else if (query.startsWith(':duckduckgo')) {
         const searchQuery = query.replace(':duckduckgo', '').trim();
         searchDuckDuckGo(searchQuery);
+    } else if (query.startsWith(':yandex')) {
+        const searchQuery = query.replace(':yandex', '').trim();
+        searchYandex(searchQuery);
+    } else if (query.startsWith(':bing')) {
+        const searchQuery = query.replace(':bing', '').trim();
+        searchBing(searchQuery);
+    } else if (query.startsWith(':yahoo')) {
+        const searchQuery = query.replace(':yahoo', '').trim();
+        searchYahoo(searchQuery);
+    } else if (query.startsWith(':wiki')) {
+        const searchQuery = query.replace(':wiki', '').trim();
+        searchWikipedia(searchQuery);
+    } else if (query.startsWith(':yt')) {
+        const searchQuery = query.replace(':yt', '').trim();
+        searchYoutube(searchQuery);
     } else {
         searchGoogle(query);
     }
@@ -119,6 +134,42 @@ function executeCommand() {
 function searchGoogle(query) {
     if (query !== '') {
         window.location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+    }
+}
+
+function searchDuckDuckGo(query) {
+    if (query !== '') {
+        window.location.href = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
+    }
+}
+
+function searchYandex(query) {
+    if (query !== '') {
+        window.location.href = `https://yandex.com/search/?text=${encodeURIComponent(query)}`;
+    }
+}
+
+function searchBing(query) {
+    if (query !== '') {
+        window.location.href = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
+    }
+}
+
+function searchYahoo(query) {
+    if (query !== '') {
+        window.location.href = `https://search.yahoo.com/search?p=${encodeURIComponent(query)}`;
+    }
+}
+
+function searchWikipedia(query) {
+    if (query !== '') {
+        window.location.href = `https://en.wikipedia.org/wiki/${encodeURIComponent(query)}`;
+    }
+}
+
+function searchYoutube(query) {
+    if (query !== '') {
+        window.location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
     }
 }
 
@@ -157,12 +208,6 @@ function displayUserAgent() {
     setTimeout(() => {
         searchInput.value = '';
     }, 2000);
-}
-
-function searchDuckDuckGo(query) {
-    if (query !== '') {
-        window.location.href = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
-    }
 }
 
 document.getElementById('searchInput').addEventListener('keypress', function(event) {
