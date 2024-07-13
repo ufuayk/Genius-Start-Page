@@ -4,7 +4,7 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 
 *Oh... yes, I may have written a little dramatic article. A little bit.*
 
-• Website & Demo: *https://coderyello.github.io/Genius-Start-Page* | Version 1.0 (Latest.)
+• Website & Demo: *https://coderyello.github.io/Genius-Start-Page* | Version 2.0 (Latest.)
 
 ![image](https://raw.githubusercontent.com/CoderYello/Genius-Start-Page/main/screenshots/screenshot.png)
 
@@ -19,6 +19,11 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 
 ### 🔍 Search Commands
 - `:duckduckgo [search query]` - Searches the specified query on DuckDuckGo.
+- `:yandex [search query]` - Searches the specified query on Yandex.
+- `:bing [search query]` - Searches the specified query on Bing.
+- `:yahoo [search query]` - Searches the specified query on Yahoo.
+- `:wiki [search query]` - Searches the specified query on Wikipedia.
+- `:yt [search query]` - Searches the specified query on YouTube.
 - `[default search]` - If no command is used, the query will be searched on Google.
 
 ### ➕ Calculation Command
@@ -61,8 +66,7 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 ## 🗺️ Roadmap
 
 - ~~Social media redirect commands. Great convenience.~~
-- Adding more advanced search features and search engines. | *Coming soon.*
-- Editing visuals and animations, providing a smoother experience.
+- ~~Adding more advanced search features and search engines.~~
 - Improved mobile support and fully responsive design.
 - Allowing users to install their own themes. CSS.
 - History recall and search suggestions features.
