@@ -94,6 +94,24 @@ function executeCommand() {
                 case '!soundcloud':
                     window.location.href = 'https://www.soundcloud.com/';
                     break;
+                case '!pinterest':
+                    window.location.href = 'https://pinterest.com/';
+                    break;
+                case '!gitlab':
+                    window.location.href = 'https://gitlab.com/';
+                    break;
+                case '!ign':
+                    window.location.href = 'https://ign.com/';
+                    break;
+                case '!forbes':
+                    window.location.href = 'https://forbes.com/';
+                    break;
+                case '!cnbc':
+                    window.location.href = 'https://cnbc.com/';
+                    break;
+                case '!booking':
+                    window.location.href = 'https://booking.com/';
+                    break;
                 case '!help':
                     window.location.href = 'https://github.com/CoderYello/genius-start-page';
                     break;
