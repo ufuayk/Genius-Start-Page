@@ -67,13 +67,15 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 
 - ~~Social media redirect commands. Great convenience.~~
 - ~~Adding more advanced search features and search engines.~~
-- Improved mobile support and fully responsive design.
-- Allowing users to install their own themes. CSS.
+- Increase the number of sites that can be navigated with redirect commands.
+- Dark mode.
+- Ability to easily find out the weather forecast.
+- Ability to add custom backgrounds.
 - History recall and search suggestions features.
 - Adding mini games that can be run with simple commands. Like Chrome dino.
-- Increase the number of sites that can be navigated with redirect commands.
 - Ability to add minimal and functional widgets to the page.
-- Chrome and Firefox extension. | *Possible.*
+- Allowing users to install their own themes. CSS.
+- Chrome and Firefox extension.
 
 ## 💰 Donations
 
