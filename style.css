@@ -25,6 +25,18 @@ body {
     to { opacity: 1; }
 }
 
+.banner-light, .banner-dark {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.banner-dark {
+    display: none;
+}
+
 #searchInput {
     width: calc(100% - 50px);
     padding: 15px;
@@ -35,10 +47,60 @@ body {
 
 #searchIcon {
     position: absolute;
-    top: 50%; 
+    bottom: 22.5px;
     right: 30px;
-    transform: translateY(-50%);
     width: 30px;
     height: auto;
     cursor: pointer;
+    user-select: none;
+}
+
+#footer {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+
+#footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+#footer:hover {
+    opacity: 1;
+}
+
+body.dark-mode {
+    background-color: #333;
+}
+
+body.dark-mode .container {
+    background-color: #444;
+}
+
+body.dark-mode #searchInput {
+    background-color: #555;
+    color: #fff;
+    border-color: #666;
+}
+
+body.dark-mode #searchInput::placeholder {
+    color: #aaa;
+}
+
+body.dark-mode .banner-light {
+    display: none;
+}
+
+body.dark-mode .banner-dark {
+    display: block;
+}
+
+body.dark-mode #footer a {
+    color: #fff;
 }
