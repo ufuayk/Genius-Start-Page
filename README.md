@@ -4,7 +4,7 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 
 *Oh... yes, I may have written a little dramatic article. A little bit.*
 
-• Website & Demo: *https://coderyello.github.io/Genius-Start-Page* | Version 2.5 (Latest.)
+• Website & Demo: *https://coderyello.github.io/Genius-Start-Page* | Version 3 (Latest.)
 
 ![image](https://raw.githubusercontent.com/CoderYello/Genius-Start-Page/main/screenshots/screenshot.png)
 
@@ -67,6 +67,10 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 - `!help` - Redirects to the GitHub repository.
 - `!yello` - Redirects to the author's GitHub profile.
 
+### 🎨 Theming Commands
+- `!darkmode` - Changes the theme to dark.
+- `!whitemode` - Changes the theme to white. This is the default.
+
 </details>
 
 ## 🗺️ Roadmap
@@ -74,7 +78,7 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 - ~~Social media redirect commands. Great convenience.~~
 - ~~Adding more advanced search features and search engines.~~
 - ~~Increase the number of sites that can be navigated with redirect commands.~~
-- Dark mode.
+- ~~Dark mode.~~
 - Ability to easily find out the weather forecast.
 - Ability to add custom backgrounds.
 - History recall and search suggestions features.
