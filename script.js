@@ -121,6 +121,12 @@ function executeCommand() {
                 case '!easteregg':
                     alert('.-- .... .- - .----. ... / ..- .--. ..--..');
                     break;
+                case '!darkmode':
+                    setMode('dark');
+                    break;
+                case '!whitemode':
+                    setMode('light');
+                    break;
                 default:
                     alert('Invalid command!');
                     break;
@@ -227,6 +233,24 @@ function displayUserAgent() {
         searchInput.value = '';
     }, 2000);
 }
+
+function setMode(mode) {
+    if (mode === 'dark') {
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+    }
+    localStorage.setItem('mode', mode);
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const savedMode = localStorage.getItem('mode');
+    if (savedMode === 'dark') {
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+    }
+});
 
 document.getElementById('searchInput').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
