@@ -6,7 +6,7 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 
 • Website & Demo: *https://coderyello.github.io/Genius-Start-Page* | Version 3 (Latest.)
 
-![image](https://raw.githubusercontent.com/CoderYello/Genius-Start-Page/main/screenshots/screenshot.png)
+![image](https://raw.githubusercontent.com/CoderYello/Genius-Start-Page/main/image/screenshot.png)
 
 ## 📜 Commands
 
@@ -85,7 +85,7 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 - ~~Adding more advanced search features and search engines.~~
 - ~~Increase the number of sites that can be navigated with redirect commands.~~
 - ~~Dark mode.~~
-- Ability to easily find out the weather forecast.
+- ~~Ability to easily find out the weather forecast.~~
 - Ability to add custom backgrounds.
 - History recall and search suggestions features.
 - Adding mini games that can be run with simple commands. Like Chrome dino.
