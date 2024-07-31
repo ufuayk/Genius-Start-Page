@@ -15,6 +15,9 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 
 ### 🎯 General Commands
 - `!today` - Displays the current date in the format: "July 7 2024 Sunday".
+- `!time` - Displays the current time in the format: "12:10:02".
+- `!weather-city [city]` - Displays weather information in the specified city.
+- `!define [word]` - Displays the meaning of the requested word.
 - `!useragent` - Displays the user's short User-Agent string.
 
 ### 🔍 Search Commands
@@ -64,6 +67,9 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 - `!forbes` - Redirects to Forbes.
 - `!cnbc` - Redirects to CNBC.
 - `!booking` - Redirects to Booking.
+- `!holidays` - Redirects to timeanddate.
+- `!wordle` - Redirects to Wordle (NY Times).
+- `!wordle-tr` - Redirects to Wordle (Bundle).
 - `!help` - Redirects to the GitHub repository.
 - `!yello` - Redirects to the author's GitHub profile.
 
@@ -90,6 +96,10 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 ## 💰 Donations
 
 Genius Start Page is a **hobby project**. I have no financial expectations and therefore do not offer a donation option. The biggest donation you can make to the project is to **star the project**. It is also very important that you **contribute** to the development of the project. Thank you in advance.
+
+## 🤖 Information about Chrome & Firefox Add-on
+
+When I release the Chrome and Firefox extensions, the .github.io site that I temporarily opened with GitHub Pages will be closed. You will need to use the add-on. Of course the source code will always remain open.
 
 ## 👷🏻‍♂️ First Author
 
