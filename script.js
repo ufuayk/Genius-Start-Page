@@ -4,10 +4,16 @@ function executeCommand() {
         const command = query.toLowerCase();
         if (command === '!today') {
             displayToday();
+        } else if (command === '!time') {
+            displayTime();
         } else if (command === '!useragent') {
             displayUserAgent();
+        } else if (command.startsWith('!define')) {
+            defineWord(command);
         } else if (command.startsWith('!calculate')) {
             calculateResult(command);
+        } else if (command.startsWith('!weather-city')) {
+            weatherCity(command);
         } else {
             switch (command) {
                 case '!youtube':
@@ -112,6 +118,15 @@ function executeCommand() {
                 case '!booking':
                     window.location.href = 'https://booking.com/';
                     break;
+                case '!holidays':
+                    window.location.href = 'https://www.timeanddate.com/holidays/';
+                    break
+                case '!wordle':
+                    window.location.href = 'https://www.nytimes.com/games/wordle/index.html';
+                    break
+                case '!wordle-tr':
+                    window.location.href = 'https://wordleturkce.bundle.app/';
+                    break
                 case '!help':
                     window.location.href = 'https://github.com/CoderYello/genius-start-page';
                     break;
@@ -214,12 +229,48 @@ function calculateResult(command) {
     }
 }
 
+function weatherCity(command) {
+    const city = command.replace('!weather-city','').trim();
+    if (city) {
+        const url = `https://openweathermap.org/find?q=${encodeURIComponent(city)}`;
+        window.location.href = url;
+    } else {
+        alert('Please enter a city name after the command!')
+    }
+}
+
+function defineWord(command) {
+    const define = command.replace('!define','').trim();
+    if (define) {
+        const url = `https://www.merriam-webster.com/dictionary/${encodeURIComponent(define)}`;
+        window.location.href = url;
+    } else {
+        alert('Please enter a city name after the command!')
+    }
+}
+
 function displayToday() {
     const today = new Date();
     const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
     const formattedDate = today.toLocaleDateString('en-US', options);
     const searchInput = document.getElementById('searchInput');
     searchInput.value = formattedDate;
+    setTimeout(() => {
+        searchInput.value = '';
+    }, 2000);
+}
+
+function displayTime() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    
+    const searchInput = document.getElementById('searchInput');
+    searchInput.value = timeString;
+    
     setTimeout(() => {
         searchInput.value = '';
     }, 2000);
