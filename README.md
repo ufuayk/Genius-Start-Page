@@ -4,9 +4,9 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 
 *Oh... yes, I may have written a little dramatic article. A little bit.*
 
-• Website & Demo: *https://coderyello.github.io/Genius-Start-Page* | Version 4 (Latest.)
+• Website & Demo: *https://ufuayk.github.io/Genius-Start-Page* | Version 4 (Latest.)
 
-![image](https://raw.githubusercontent.com/CoderYello/Genius-Start-Page/main/image/screenshot.png)
+![image](https://raw.githubusercontent.com/ufuayk/Genius-Start-Page/main/image/screenshot.png)
 
 ## 📜 Commands
 
@@ -103,7 +103,7 @@ When I release the Chrome and Firefox extensions, the .github.io site that I tem
 
 ## 👷🏻‍♂️ First Author
 
-• [@Yello](https://www.github.com/CoderYello) for design and development.
+• [@ufuayk](https://www.github.com/ufuayk) for design and development.
 
 ## 📑 License
 
