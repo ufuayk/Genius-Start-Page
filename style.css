@@ -10,7 +10,7 @@ body {
 
 .container {
     opacity: 0;
-    animation: fade-in 1.5s forwards;
+    animation: fade-in 3.5s forwards;
     background-color: #fff;
     padding: 10px;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
@@ -61,7 +61,7 @@ body {
     left: 0;
     width: 100%;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     opacity: 0.3;
     transition: opacity 0.3s;
 }

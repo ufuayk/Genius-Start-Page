@@ -4,7 +4,7 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 
 *Oh... yes, I may have written a little dramatic article. A little bit.*
 
-• Website & Demo: *https://ufuayk.github.io/Genius-Start-Page* | Version 4 (Latest.)
+• Website & Demo: *https://ufuayk.github.io/Genius-Start-Page* | Version 5.0 (Latest.)
 
 ![image](https://raw.githubusercontent.com/ufuayk/Genius-Start-Page/main/image/screenshot.png)
 
@@ -24,13 +24,14 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 - `:duckduckgo [search query]` - Searches the specified query on DuckDuckGo.
 - `:yandex [search query]` - Searches the specified query on Yandex.
 - `:bing [search query]` - Searches the specified query on Bing.
+- `:ask [search query]` - Searches the specified query on Ask.
 - `:yahoo [search query]` - Searches the specified query on Yahoo.
 - `:wiki [search query]` - Searches the specified query on Wikipedia.
-- `:yt [search query]` - Searches the specified query on YouTube.
+- `:youtubet [search query]` - Searches the specified query on YouTube.
 - `[default search]` - If no command is used, the query will be searched on Google.
 
 ### ➕ Calculation Command
-- `!calculate [expression]` - Calculates the mathematical expression and displays the result. 
+- `!calculate [expression]` - Calculates the mathematical expression and displays the result.
 
 ### 📦 Redirect Commands
 - `!youtube` - Redirects to YouTube.
@@ -50,6 +51,9 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 - `!wiki` - Redirects to Wikipedia.
 - `!maps` - Redirects to Google Maps.
 - `!stackoverflow` - Redirects to Stack Overflow.
+- `!layersto` - Redirects to Layers.
+- `!dev` - Redirects to Dev.
+- `!codepen` - Redirects to CodePen.
 - `!goal` - Redirects to Goal.
 - `!espn` - Redirects to ESPN.
 - `!replit` - Redirects to Replit.
@@ -71,11 +75,11 @@ Genius Start Page is a browser start page that offers a seemingly **minimal desi
 - `!wordle` - Redirects to Wordle (NY Times).
 - `!wordle-tr` - Redirects to Wordle (Bundle).
 - `!help` - Redirects to the GitHub repository.
-- `!yello` - Redirects to the author's GitHub profile.
+- `!ufuayk` - Redirects to the author's GitHub profile.
 
 ### 🎨 Theming Commands
 - `!darkmode` - Changes the theme to dark.
-- `!whitemode` - Changes the theme to white. This is the default.
+- `!lightmode` - Changes the theme to white. This is the default.
 
 </details>
 

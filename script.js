@@ -67,6 +67,15 @@ function executeCommand() {
                 case '!stackoverflow':
                     window.location.href = 'https://www.stackoverflow.com/';
                     break;
+                case '!layersto':
+                    window.location.href = 'https://layers.to/';
+                    break;
+                case '!dev':
+                    window.location.href = 'https://dev.to/';
+                    break;
+                case '!codepen':
+                    window.location.href = 'https://codepen.io/';
+                    break;
                 case '!goal':
                     window.location.href = 'https://www.goal.com/';
                     break;
@@ -128,10 +137,10 @@ function executeCommand() {
                     window.location.href = 'https://wordleturkce.bundle.app/';
                     break
                 case '!help':
-                    window.location.href = 'https://github.com/CoderYello/genius-start-page';
+                    window.location.href = 'https://github.com/ufuayk/genius-start-page';
                     break;
-                case '!yello':
-                    window.location.href = 'https://github.com/CoderYello';
+                case '!ufuayk':
+                    window.location.href = 'https://github.com/ufuayk';
                     break;
                 case '!easteregg':
                     alert('.-- .... .- - .----. ... / ..- .--. ..--..');
@@ -139,7 +148,7 @@ function executeCommand() {
                 case '!darkmode':
                     setMode('dark');
                     break;
-                case '!whitemode':
+                case '!lightmode':
                     setMode('light');
                     break;
                 default:
@@ -147,26 +156,29 @@ function executeCommand() {
                     break;
             }
         }
-    } else if (query.startsWith(':duckduckgo')) {
-        const searchQuery = query.replace(':duckduckgo', '').trim();
-        searchDuckDuckGo(searchQuery);
+    } else if (query.startsWith(':google')) {
+        const searchQuery = query.replace(':google', '').trim();
+        searchGoogle(searchQuery);
     } else if (query.startsWith(':yandex')) {
         const searchQuery = query.replace(':yandex', '').trim();
         searchYandex(searchQuery);
     } else if (query.startsWith(':bing')) {
         const searchQuery = query.replace(':bing', '').trim();
         searchBing(searchQuery);
+    } else if (query.startsWith(':ask')) {
+        const searchQuery = query.replace(':ask', '').trim();
+        searchAsk(searchQuery);
     } else if (query.startsWith(':yahoo')) {
         const searchQuery = query.replace(':yahoo', '').trim();
         searchYahoo(searchQuery);
     } else if (query.startsWith(':wiki')) {
         const searchQuery = query.replace(':wiki', '').trim();
         searchWikipedia(searchQuery);
-    } else if (query.startsWith(':yt')) {
-        const searchQuery = query.replace(':yt', '').trim();
+    } else if (query.startsWith(':youtube')) {
+        const searchQuery = query.replace(':youtube', '').trim();
         searchYoutube(searchQuery);
     } else {
-        searchGoogle(query);
+        searchDuckDuckGo(query);
     }
 }
 
@@ -191,6 +203,12 @@ function searchYandex(query) {
 function searchBing(query) {
     if (query !== '') {
         window.location.href = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
+    }
+}
+
+function searchAsk(query) {
+    if (query !== '') {
+        window.location.href = `https://www.ask.com/web?q=${encodeURIComponent(query)}`;
     }
 }
 
