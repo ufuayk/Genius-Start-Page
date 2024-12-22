@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Start Page</title>
+    <link rel="icon" href="../image/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <button class="prev" onclick="previousPage()" title="Previous page">Previous</button>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">Theme</button>
+    
+    <div class="container">
+
+        <h1>Command List</h1>
+
+        <div class="section-title">General Commands</div>
+        <ul>
+            <li><code>!today</code> - Displays the current date in the format: "July 7 2024 Sunday"</li>
+            <li><code>!time</code> - Displays the current time in the format: "12:10:02"</li>
+            <li><code>!weather-city [city]</code> - Displays weather information in the specified city</li>
+            <li><code>!define [word]</code> - Displays the meaning of the requested word</li>
+            <li><code>!useragent</code> - Displays the user's short User-Agent string</li>
+        </ul>
+
+        <div class="section-title">Search Commands</div>
+        <ul>
+            <li><code>:duckduckgo [search query]</code> - Searches the specified query on DuckDuckGo</li>
+            <li><code>:yandex [search query]</code> - Searches the specified query on Yandex</li>
+            <li><code>:bing [search query]</code> - Searches the specified query on Bing</li>
+            <li><code>:ask [search query]</code> - Searches the specified query on Ask</li>
+            <li><code>:yahoo [search query]</code> - Searches the specified query on Yahoo</li>
+            <li><code>:wiki [search query]</code> - Searches the specified query on Wikipedia</li>
+            <li><code>:youtubet [search query]</code> - Searches the specified query on YouTube</li>
+            <li><code>[default search]</code> - If no command is used, the query will be searched on Google</li>
+        </ul>
+
+        <div class="section-title">Calculation Command</div>
+        <ul>
+            <li><code>!calculate [expression]</code> - Calculates the mathematical expression and displays the result</li>
+        </ul>
+
+        <div class="section-title">Theming Commands</div>
+        <ul>
+            <li><code>!darkmode</code> - Changes the theme to dark</li>
+            <li><code>!lightmode</code> - Changes the theme to white. This is the default</li>
+            <li><code>!hide-ufuk</code> - Makes the footer invisible.</li>
+            <li><code>!show-ufuk</code> - Makes the footer visible.</li>
+            <li><code>!hide-banner</code> - Makes the banner invisible.</li>
+            <li><code>!show-banner</code> - Makes the banner visible.</li>
+            <li><code>!hide-icon</code> - Makes the search icon invisible.</li>
+            <li><code>!show-icon</code> - Makes the search icon visible.</li>
+        </ul>
+
+
+        <div class="section-title">Redirect Commands</div>
+        <ul>
+            <li><code>!youtube</code> - Redirects to YouTube</li>
+            <li><code>!x</code> - Redirects to X (Twitter)</li>
+            <li><code>!facebook</code> - Redirects to Facebook</li>
+            <li><code>!instagram</code> - Redirects to Instagram</li>
+            <li><code>!reddit</code> - Redirects to Reddit</li>
+            <li><code>!tiktok</code> - Redirects to TikTok</li>
+            <li><code>!github</code> - Redirects to GitHub</li>
+            <li><code>!linkedin</code> - Redirects to LinkedIn</li>
+            <li><code>!netflix</code> - Redirects to Netflix</li>
+            <li><code>!amazon</code> - Redirects to Amazon</li>
+            <li><code>!bbc</code> - Redirects to BBC</li>
+            <li><code>!cnn</code> - Redirects to CNN</li>
+            <li><code>!weather</code> - Redirects to Weather.com</li>
+            <li><code>!spotify</code> - Redirects to Spotify</li>
+            <li><code>!wiki</code> - Redirects to Wikipedia</li>
+            <li><code>!maps</code> - Redirects to Google Maps</li>
+            <li><code>!stackoverflow</code> - Redirects to Stack Overflow</li>
+            <li><code>!layersto</code> - Redirects to Layers</li>
+            <li><code>!dev</code> - Redirects to Dev</li>
+            <li><code>!codepen</code> - Redirects to CodePen</li>
+            <li><code>!goal</code> - Redirects to Goal</li>
+            <li><code>!espn</code> - Redirects to ESPN</li>
+            <li><code>!replit</code> - Redirects to Replit</li>
+            <li><code>!discord</code> - Redirects to Discord</li>
+            <li><code>!twitch</code> - Redirects to Twitch</li>
+            <li><code>!prime</code> - Redirects to Prime Video</li>
+            <li><code>!steam</code> - Redirects to Steam</li>
+            <li><code>!behance</code> - Redirects to Behance</li>
+            <li><code>!gpt</code> - Redirects to ChatGPT</li>
+            <li><code>!nytimes</code> - Redirects to The New York Times</li>
+            <li><code>!soundcloud</code> - Redirects to SoundCloud</li>
+            <li><code>!pinterest</code> - Redirects to Pinterest</li>
+            <li><code>!gitlab</code> - Redirects to GitLab</li>
+            <li><code>!ign</code> - Redirects to IGN</li>
+            <li><code>!forbes</code> - Redirects to Forbes</li>
+            <li><code>!cnbc</code> - Redirects to CNBC</li>
+            <li><code>!booking</code> - Redirects to Booking</li>
+            <li><code>!holidays</code> - Redirects to timeanddate</li>
+            <li><code>!wordle</code> - Redirects to Wordle (NY Times)</li>
+            <li><code>!wordle-tr</code> - Redirects to Wordle (Bundle)</li>
+            <li><code>!help</code> - Redirects to commands page</li>
+            <li><code>!ufuayk</code> - Redirects to the author's GitHub profile</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

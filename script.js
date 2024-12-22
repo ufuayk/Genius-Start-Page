@@ -16,6 +16,30 @@ function executeCommand() {
             weatherCity(command);
         } else {
             switch (command) {
+                case '!hide-ufuk':
+                    hideUfuk();
+                    localStorage.setItem('hideUfuk', 'true');
+                    break;
+                case '!show-ufuk':
+                    showUfuk();
+                    localStorage.setItem('hideUfuk', 'false');
+                    break;
+                case '!hide-icon':
+                    hideSearchIcon();
+                    localStorage.setItem('hideSearchIcon', 'true');
+                    break;
+                case '!show-icon':
+                    showSearchIcon();
+                    localStorage.setItem('hideSearchIcon', 'false');
+                    break;
+                case '!hide-banner':
+                    hideBanner();
+                    localStorage.setItem('hideBanner', 'true');
+                    break;
+                case '!show-banner':
+                    showBanner();
+                    localStorage.setItem('hideBanner', 'false');
+                    break;
                 case '!youtube':
                     window.location.href = 'https://www.youtube.com';
                     break;
@@ -137,13 +161,10 @@ function executeCommand() {
                     window.location.href = 'https://wordleturkce.bundle.app/';
                     break
                 case '!help':
-                    window.location.href = 'https://github.com/ufuayk/genius-start-page';
+                    window.location.href = 'commands/index.html';
                     break;
                 case '!ufuayk':
                     window.location.href = 'https://github.com/ufuayk';
-                    break;
-                case '!easteregg':
-                    alert('.-- .... .- - .----. ... / ..- .--. ..--..');
                     break;
                 case '!darkmode':
                     setMode('dark');
@@ -152,7 +173,7 @@ function executeCommand() {
                     setMode('light');
                     break;
                 default:
-                    alert('Invalid command!');
+                    alert('Invalid command! !help');
                     break;
             }
         }
@@ -228,6 +249,63 @@ function searchYoutube(query) {
     if (query !== '') {
         window.location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
     }
+}
+
+function hideUfuk() {
+    const footer = document.getElementById('footer');
+    if (footer) {
+        footer.style.display = 'none';
+    }
+}
+
+function showUfuk() {
+    const footer = document.getElementById('footer');
+    if (footer) {
+        footer.style.display = 'block';
+    }
+}
+
+function hideSearchIcon() {
+    const searchIcon = document.getElementById('searchIcon');
+    if (searchIcon) {
+        searchIcon.style.display = 'none';
+    }
+}
+
+function showSearchIcon() {
+    const searchIcon = document.getElementById('searchIcon');
+    if (searchIcon) {
+        searchIcon.style.display = 'block';
+    }
+}
+
+function hideBanner() {
+    const bannerLight = document.getElementById('banner');
+    const bannerDark = document.getElementById('banner-dark');
+    
+    if (bannerLight) bannerLight.style.display = 'none';
+    if (bannerDark) bannerDark.style.display = 'none';
+    
+    localStorage.setItem('hideBanner', 'true');
+}
+
+function showBanner() {
+    const bannerLight = document.getElementById('banner');
+    const bannerDark = document.getElementById('banner-dark');
+    
+    const isDarkMode = document.documentElement.classList.contains('dark');
+    
+    if (bannerLight && bannerDark) {
+        if (isDarkMode) {
+            bannerDark.style.display = 'block';
+            bannerLight.style.display = 'none';
+        } else {
+            bannerLight.style.display = 'block';
+            bannerDark.style.display = 'none';
+        }
+    }
+    
+    localStorage.setItem('hideBanner', 'false');
 }
 
 function calculateResult(command) {
@@ -321,10 +399,32 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    if (localStorage.getItem('hideUfuk') === 'true') {
+        hideUfuk();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    if (localStorage.getItem('hideSearchIcon') === 'true') {
+        hideSearchIcon();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    if (localStorage.getItem('hideBanner') === 'true') {
+        hideBanner();
+    }
+});
+
 document.getElementById('searchInput').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
         executeCommand();
     }
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('searchInput').value = '';
 });
 
 document.getElementById('searchIcon').addEventListener('click', function() {
