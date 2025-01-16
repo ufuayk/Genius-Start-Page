@@ -2,6 +2,8 @@
 
 > **Update:** 
 > Damn it! Chrome wants 5 bucks from me to release the extension, I didn't know that. I guess the Firefox add-on is closer than Chrome, guys... And yes, this update article was written about an hour after the previous one. 🙄
+>
+> Why did I say “guys”? I'm the only one who knows about this stupid extension. I think I'm going mad. 🤯
 
 # ✨ Genius Start Page
 
