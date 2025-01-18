@@ -1,10 +1,3 @@
-> **Chrome extension is coming!** 🚀
-
-> **Update:** 
-> Damn it! Chrome wants 5 bucks from me to release the extension, I didn't know that. I guess the Firefox add-on is closer than Chrome, guys... And yes, this update article was written about an hour after the previous one. 🙄
->
-> Why did I say “guys”? I'm the only one who knows about this stupid extension. I think I'm going mad. 🤯
-
 # ✨ Genius Start Page
 
 Genius Start Page is a browser start page that offers a seemingly **minimal design** with very **complex features** in the background. We hope that the project will grow even more with the **community's support** for the script. The **GPLv3 License** allows the project to be easily **edited** and **translated**. *Let's develop it together. Let's walk together.*
