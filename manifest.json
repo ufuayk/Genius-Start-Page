@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "Genius Start Page",
+  "short_name": "Genius Tab",
+  "version": "1.0.0",
+  "description": "A minimal, complex and customizable browser start page extension",
+  "author": "Ufuayk",
+  "homepage_url": "https://github.com/ufuayk",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "genius-start-page@ufuayk.github.io",
+      "strict_min_version": "79.0"
+    }
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Genius Start Page"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "chrome_url_overrides": {
+    "newtab": "genius-start-page/index.html"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "https://ufuk.bearblog.dev/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}

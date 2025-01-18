@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Start Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="image/favicon.ico">
+
+</head>
+<body class="light-mode">
+
+    <div id="extensionContent">
+        <div class="container">
+            <img src="image/dark.png" alt="Banner" id="banner" class="banner-light">
+            <img src="image/white.png" alt="Banner" id="banner-dark" class="banner-dark">
+            <input type="text" id="searchInput" placeholder="Search on DuckDuckGo or enter a command">
+            <img src="image/search.ico" alt="Search Icon" id="searchIcon">
+        </div>
+
+        <div id="footer">
+            <a href="https://github.com/ufuayk" target="_blank">Made with ❤ by Ufuk</a>
+        </div>
+    </div>
+
+    <div id="disabledMessage" style="display: none; text-align: center; padding: 20px;">
+        <h1>Genius Start Page is disabled</h1>
+        <p>Click the extension icon and press "Enable Extension" to activate it again.</p>
+    </div>
+    
+    <script src="script.js" defer></script>
+    <script src="extension-state.js" defer></script>
+</body>
+</html>

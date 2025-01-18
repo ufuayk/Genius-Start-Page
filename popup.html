@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Start Page</title>
+    <style>
+        body {
+            width: 200px;
+            padding: 16px;
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .primary {
+            background: #63dffa;
+            color: #000;
+        }
+
+        .primary:hover {
+            background: #4fd3f0;
+        }
+
+        .secondary {
+            background: #e9ecef;
+            color: #1a1a1a;
+        }
+
+        .secondary:hover {
+            background: #dee2e6;
+        }
+
+        .icon {
+            font-size: 18px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #2d2d2d;
+            }
+
+            .title {
+                color: #fff;
+            }
+
+            .secondary {
+                background: #444;
+                color: #fff;
+            }
+
+            .secondary:hover {
+                background: #555;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="toggleBtn" class="button primary">
+            <span class="icon">⚡</span>
+            <span id="toggleText">Disable Extension</span>
+        </button>
+        <button id="helpBtn" class="button secondary">
+            <span class="icon">📖</span>
+            <span>View Commands</span>
+        </button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html> 
