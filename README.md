@@ -1,3 +1,7 @@
+> **Add-on** is Released!
+> 
+> [![GET THE ADD-ON](https://blog.mozilla.org/addons/files/2015/11/get-the-addon.png)](https://addons.mozilla.org/tr/firefox/addon/genius-start-page/)
+
 # ✨ Genius Start Page
 
 Genius Start Page is a browser start page that offers a seemingly **minimal design** with very **complex features** in the background. We hope that the project will grow even more with the **community's support** for the script. The **GPLv3 License** allows the project to be easily **edited** and **translated**. *Let's develop it together. Let's walk together.*
